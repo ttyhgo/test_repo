@@ -6,9 +6,9 @@ import os
 import smtplib
 
 #change email to your email
-fromaddr = 'ttyhgo@gmail.com'
-toaddr = 'ttyhgo@kookmin.ac.kr'
-user = 'ttyhgo@gmail.com' 
+fromaddr = 'myemail@mail.com'
+toaddr = 'myemail@mail.com'
+user = 'myemail@mail.com' 
 pwd = 'push the password'
 
 
@@ -27,8 +27,8 @@ server.starttls()
 server.login(user,pwd)
 
 msg = '\r\n'.join([
-	'From: ttyhgo@gmail.com',
-	'To: ttyhgo@kookmin.ac.kr',
+	'From: '+fromaddr,
+	'To: '+toaddr,
 	'Subject :' +ip,
 	'',
 	ip
